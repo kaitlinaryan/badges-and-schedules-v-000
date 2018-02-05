@@ -12,3 +12,14 @@ speakers.each do |name|
 end
 badges
 end
+
+def assign_rooms(speakers)
+  rooms = []
+  room_number = 1
+  speakers.each do |name|
+    rooms.push("Hello, #{name}! You'll be assigned to room #{room_number}!")
+    room_number += 1
+  end
+  rooms
+end
+end
